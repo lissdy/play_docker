@@ -1,2 +1,1 @@
-# play_docker
-play with docker source code
+To get familiar with [Docker](https://github.com/moby/moby) source code
