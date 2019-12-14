@@ -16,6 +16,7 @@ func newDockerCommand(dockerCli *command.DockerCli) *cli.TopLevelCommand{
 	var (
 		opts    *cliflags.ClientOptions
 		flags   *pflag.FlagSet
+		helpCmd *cobra.Command
 	)
 
 	cmd := &cobra.Command{
@@ -36,7 +37,36 @@ func newDockerCommand(dockerCli *command.DockerCli) *cli.TopLevelCommand{
 
 	opts, flags, _ = cli.SetupRootCommand(cmd)
 	flags.BoolP("version", "v", false, "Print version information and quit")
+
+	setupHelpCommand(dockerCli, cmd, helpCmd)
+
 	return cli.NewTopLevelCommand(cmd, dockerCli, opts, flags)
+}
+
+func setupHelpCommand(dockerCli command.Cli, rootCmd, helpCmd *cobra.Command) {
+	//origRun := helpCmd.Run
+	//origRunE := helpCmd.RunE
+	//
+	//helpCmd.Run = nil
+	//helpCmd.RunE = func(c *cobra.Command, args []string) error {
+	//	if len(args) > 0 {
+	//		helpcmd, err := pluginmanager.PluginRunCommand(dockerCli, args[0], rootCmd)
+	//		if err == nil {
+	//			err = helpcmd.Run()
+	//			if err != nil {
+	//				return err
+	//			}
+	//		}
+	//		if !pluginmanager.IsNotFound(err) {
+	//			return err
+	//		}
+	//	}
+	//	if origRunE != nil {
+	//		return origRunE(c, args)
+	//	}
+	//	origRun(c, args)
+	//	return nil
+	//}
 }
 
 

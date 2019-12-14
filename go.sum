@@ -63,6 +63,8 @@ github.com/docker/distribution v2.6.2+incompatible/go.mod h1:J2gT2udsDAN96Uj4Kfc
 github.com/docker/distribution v2.7.0+incompatible/go.mod h1:J2gT2udsDAN96Uj4KfcMRqY0/ypR+oyYUYmja8H+y+w=
 github.com/docker/distribution v2.7.1+incompatible h1:a5mlkVzth6W5A4fOsS3D2EO5BUmsJpcB+cRlLU7cSug=
 github.com/docker/distribution v2.7.1+incompatible/go.mod h1:J2gT2udsDAN96Uj4KfcMRqY0/ypR+oyYUYmja8H+y+w=
+github.com/docker/docker v1.4.1 h1:LReOR1bcorII0OUJZawJsCwneJJY97ZkGVw0qhejty8=
+github.com/docker/docker v1.4.1/go.mod h1:eEKB0N0r5NX/I1kEveEz05bcu8tLC/8azJZsviup8Sk=
 github.com/docker/docker v1.4.2-0.20191209130008-2d467dc8d007 h1:RY5gAAE2qlcgo9gdFutXJzlBE6tyQYhUoUGHNtXFyJk=
 github.com/docker/docker v1.4.2-0.20191209130008-2d467dc8d007/go.mod h1:eEKB0N0r5NX/I1kEveEz05bcu8tLC/8azJZsviup8Sk=
 github.com/docker/docker v1.4.2-0.20191213113251-3452f136aa68 h1:ilBPbVMnqewShBNvTSuiiSu6DoGkIECLKOUb5txDX9A=
